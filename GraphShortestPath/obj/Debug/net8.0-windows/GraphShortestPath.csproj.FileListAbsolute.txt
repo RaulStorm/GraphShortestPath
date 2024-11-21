@@ -1,0 +1,17 @@
+D:\ВГТУ\.NET Framework\Курсовая работа\GraphShortestPath\GraphShortestPath\bin\Debug\net8.0-windows\GraphShortestPath.exe
+D:\ВГТУ\.NET Framework\Курсовая работа\GraphShortestPath\GraphShortestPath\bin\Debug\net8.0-windows\GraphShortestPath.deps.json
+D:\ВГТУ\.NET Framework\Курсовая работа\GraphShortestPath\GraphShortestPath\bin\Debug\net8.0-windows\GraphShortestPath.runtimeconfig.json
+D:\ВГТУ\.NET Framework\Курсовая работа\GraphShortestPath\GraphShortestPath\bin\Debug\net8.0-windows\GraphShortestPath.dll
+D:\ВГТУ\.NET Framework\Курсовая работа\GraphShortestPath\GraphShortestPath\bin\Debug\net8.0-windows\GraphShortestPath.pdb
+D:\ВГТУ\.NET Framework\Курсовая работа\GraphShortestPath\GraphShortestPath\obj\Debug\net8.0-windows\GraphShortestPath.Form1.resources
+D:\ВГТУ\.NET Framework\Курсовая работа\GraphShortestPath\GraphShortestPath\obj\Debug\net8.0-windows\GraphShortestPath.csproj.GenerateResource.cache
+D:\ВГТУ\.NET Framework\Курсовая работа\GraphShortestPath\GraphShortestPath\obj\Debug\net8.0-windows\GraphShortestPath.GeneratedMSBuildEditorConfig.editorconfig
+D:\ВГТУ\.NET Framework\Курсовая работа\GraphShortestPath\GraphShortestPath\obj\Debug\net8.0-windows\GraphShortestPath.AssemblyInfoInputs.cache
+D:\ВГТУ\.NET Framework\Курсовая работа\GraphShortestPath\GraphShortestPath\obj\Debug\net8.0-windows\GraphShortestPath.AssemblyInfo.cs
+D:\ВГТУ\.NET Framework\Курсовая работа\GraphShortestPath\GraphShortestPath\obj\Debug\net8.0-windows\GraphShortestPath.csproj.CoreCompileInputs.cache
+D:\ВГТУ\.NET Framework\Курсовая работа\GraphShortestPath\GraphShortestPath\obj\Debug\net8.0-windows\GraphShortestPath.sourcelink.json
+D:\ВГТУ\.NET Framework\Курсовая работа\GraphShortestPath\GraphShortestPath\obj\Debug\net8.0-windows\GraphShortestPath.dll
+D:\ВГТУ\.NET Framework\Курсовая работа\GraphShortestPath\GraphShortestPath\obj\Debug\net8.0-windows\refint\GraphShortestPath.dll
+D:\ВГТУ\.NET Framework\Курсовая работа\GraphShortestPath\GraphShortestPath\obj\Debug\net8.0-windows\GraphShortestPath.pdb
+D:\ВГТУ\.NET Framework\Курсовая работа\GraphShortestPath\GraphShortestPath\obj\Debug\net8.0-windows\GraphShortestPath.genruntimeconfig.cache
+D:\ВГТУ\.NET Framework\Курсовая работа\GraphShortestPath\GraphShortestPath\obj\Debug\net8.0-windows\ref\GraphShortestPath.dll
