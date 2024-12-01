@@ -113,9 +113,10 @@ namespace GraphShortestPath
         {
             OpenFileDialog openFileDialog = new OpenFileDialog
             {
-                Filter = "Все поддерживаемые форматы|*.txt;*.xml|Текстовые файлы (*.txt)|*.txt|XML файлы (*.xml)",
+                Filter = "Все поддерживаемые форматы|*.txt;*.xml|Текстовые файлы (*.txt)|*.txt|XML файлы (*.xml)|*.xml",
                 Title = "Загрузить граф"
             };
+
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
