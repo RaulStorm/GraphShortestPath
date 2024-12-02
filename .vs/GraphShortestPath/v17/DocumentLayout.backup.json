@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\\u0412\u0413\u0422\u0423\\.NET Framework\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\GraphShortestPath\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CB0853D7-D43F-47D1-A6AE-003CEBF961DA}|GraphShortestPath\\GraphShortestPath.csproj|d:\\\u0432\u0433\u0442\u0443\\.net framework\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\graphshortestpath\\graphshortestpath\\filemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB0853D7-D43F-47D1-A6AE-003CEBF961DA}|GraphShortestPath\\GraphShortestPath.csproj|solutionrelative:graphshortestpath\\filemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB0853D7-D43F-47D1-A6AE-003CEBF961DA}|GraphShortestPath\\GraphShortestPath.csproj|d:\\\u0432\u0433\u0442\u0443\\.net framework\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\graphshortestpath\\graphshortestpath\\graph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB0853D7-D43F-47D1-A6AE-003CEBF961DA}|GraphShortestPath\\GraphShortestPath.csproj|solutionrelative:graphshortestpath\\graph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CB0853D7-D43F-47D1-A6AE-003CEBF961DA}|GraphShortestPath\\GraphShortestPath.csproj|d:\\\u0432\u0433\u0442\u0443\\.net framework\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\graphshortestpath\\graphshortestpath\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB0853D7-D43F-47D1-A6AE-003CEBF961DA}|GraphShortestPath\\GraphShortestPath.csproj|solutionrelative:graphshortestpath\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,14 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CB0853D7-D43F-47D1-A6AE-003CEBF961DA}|GraphShortestPath\\GraphShortestPath.csproj|d:\\\u0432\u0433\u0442\u0443\\.net framework\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\graphshortestpath\\graphshortestpath\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB0853D7-D43F-47D1-A6AE-003CEBF961DA}|GraphShortestPath\\GraphShortestPath.csproj|solutionrelative:graphshortestpath\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB0853D7-D43F-47D1-A6AE-003CEBF961DA}|GraphShortestPath\\GraphShortestPath.csproj|d:\\\u0432\u0433\u0442\u0443\\.net framework\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\graphshortestpath\\graphshortestpath\\filemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB0853D7-D43F-47D1-A6AE-003CEBF961DA}|GraphShortestPath\\GraphShortestPath.csproj|solutionrelative:graphshortestpath\\filemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB0853D7-D43F-47D1-A6AE-003CEBF961DA}|GraphShortestPath\\GraphShortestPath.csproj|d:\\\u0432\u0433\u0442\u0443\\.net framework\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\graphshortestpath\\graphshortestpath\\graph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB0853D7-D43F-47D1-A6AE-003CEBF961DA}|GraphShortestPath\\GraphShortestPath.csproj|solutionrelative:graphshortestpath\\graph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CB0853D7-D43F-47D1-A6AE-003CEBF961DA}|GraphShortestPath\\GraphShortestPath.csproj|d:\\\u0432\u0433\u0442\u0443\\.net framework\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\graphshortestpath\\graphshortestpath\\bfs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
@@ -55,20 +55,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Graph.cs",
               "DocumentMoniker": "D:\\\u0412\u0413\u0422\u0423\\.NET Framework\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\GraphShortestPath\\GraphShortestPath\\Graph.cs",
               "RelativeDocumentMoniker": "GraphShortestPath\\Graph.cs",
               "ToolTip": "D:\\\u0412\u0413\u0422\u0423\\.NET Framework\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\GraphShortestPath\\GraphShortestPath\\Graph.cs",
               "RelativeToolTip": "GraphShortestPath\\Graph.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAqwBsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAmwCAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-15T15:51:12.066Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\\u0412\u0413\u0422\u0423\\.NET Framework\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\GraphShortestPath\\GraphShortestPath\\Form1.cs",
+              "RelativeDocumentMoniker": "GraphShortestPath\\Form1.cs",
+              "ToolTip": "D:\\\u0412\u0413\u0422\u0423\\.NET Framework\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\GraphShortestPath\\GraphShortestPath\\Form1.cs",
+              "RelativeToolTip": "GraphShortestPath\\Form1.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAASwHYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T15:52:37.626Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "D:\\\u0412\u0413\u0422\u0423\\.NET Framework\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\GraphShortestPath\\GraphShortestPath\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "GraphShortestPath\\Form1.Designer.cs",
@@ -81,20 +96,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "FileManager.cs",
               "DocumentMoniker": "D:\\\u0412\u0413\u0422\u0423\\.NET Framework\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\GraphShortestPath\\GraphShortestPath\\FileManager.cs",
               "RelativeDocumentMoniker": "GraphShortestPath\\FileManager.cs",
               "ToolTip": "D:\\\u0412\u0413\u0422\u0423\\.NET Framework\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\GraphShortestPath\\GraphShortestPath\\FileManager.cs",
               "RelativeToolTip": "GraphShortestPath\\FileManager.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAawD4AAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAawEQAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-15T17:13:24.926Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "D:\\\u0412\u0413\u0422\u0423\\.NET Framework\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\GraphShortestPath\\GraphShortestPath\\Form1.cs",
               "RelativeDocumentMoniker": "GraphShortestPath\\Form1.cs",
@@ -103,19 +118,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-15T15:49:24.012Z",
               "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\\u0412\u0413\u0422\u0423\\.NET Framework\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\GraphShortestPath\\GraphShortestPath\\Form1.cs",
-              "RelativeDocumentMoniker": "GraphShortestPath\\Form1.cs",
-              "ToolTip": "D:\\\u0412\u0413\u0422\u0423\\.NET Framework\\\u041A\u0443\u0440\u0441\u043E\u0432\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430\\GraphShortestPath\\GraphShortestPath\\Form1.cs",
-              "RelativeToolTip": "GraphShortestPath\\Form1.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAqwGwAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T15:52:37.626Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
