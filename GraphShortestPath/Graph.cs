@@ -17,7 +17,7 @@
         }
     }
 
-    public void AddEdge(int from, int to)
+    public void AddEdge(int from, int to, bool isDirected)
     {
         if (!adjacencyList.ContainsKey(from) || !adjacencyList.ContainsKey(to))
         {
@@ -32,6 +32,7 @@
             adjacencyList[to].Add(from);
         }
     }
+
 
 
     public void ClearEdges()
@@ -62,6 +63,7 @@
             neighbors.Remove(vertex);
         }
     }
+
     public List<int> GetNeighbors(int vertex)
     {
         if (adjacencyList.ContainsKey(vertex))
@@ -70,5 +72,4 @@
         }
         return new List<int>();
     }
-
 }

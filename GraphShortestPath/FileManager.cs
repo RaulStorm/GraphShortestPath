@@ -29,10 +29,11 @@ public static class FileManager
     /// Ребра: 1-2,2-3,3-4
     /// </summary>
     /// <param name="filePath">Путь к файлу</param>
+    /// <param name="isDirected">Указывает, является ли граф направленным</param>
     /// <returns>Граф, построенный на основе файла</returns>
-    public static Graph LoadGraphFromFile(string filePath)
+    public static Graph LoadGraphFromFile(string filePath, bool isDirected)
     {
-        var graph = new Graph();
+        var graph = new Graph(isDirected);
 
         try
         {
@@ -60,7 +61,7 @@ public static class FileManager
                             int.TryParse(vertices[0].Trim(), out int from) &&
                             int.TryParse(vertices[1].Trim(), out int to))
                         {
-                            graph.AddEdge(from, to); // Замените на false, если граф ненаправленный
+                            graph.AddEdge(from, to, isDirected);
                         }
                     }
                 }
@@ -91,10 +92,11 @@ public static class FileManager
     /// </Graph>
     /// </summary>
     /// <param name="filePath">Путь к файлу</param>
+    /// <param name="isDirected">Указывает, является ли граф направленным</param>
     /// <returns>Граф, построенный на основе XML-файла</returns>
     public static Graph LoadGraphFromXmlFile(string filePath, bool isDirected)
     {
-        var graph = new Graph();
+        var graph = new Graph(isDirected);
 
         try
         {
@@ -110,7 +112,7 @@ public static class FileManager
                 }
             }
 
-            // Читаем ребра
+            // Читаем рёбра
             var edgeElements = xDocument.Descendants("Edge");
             foreach (var edgeElement in edgeElements)
             {
@@ -121,7 +123,7 @@ public static class FileManager
                     int.TryParse(fromElement.Value, out int from) &&
                     int.TryParse(toElement.Value, out int to))
                 {
-                    graph.AddEdge(from, to);
+                    graph.AddEdge(from, to, isDirected);
                 }
             }
         }
@@ -132,5 +134,4 @@ public static class FileManager
 
         return graph;
     }
-
 }

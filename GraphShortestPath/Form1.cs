@@ -42,9 +42,8 @@ namespace GraphShortestPath
         {
             if (int.TryParse(txtFrom.Text, out int from) && int.TryParse(txtTo.Text, out int to))
             {
-                // Передаём состояние чекбокса для указания типа графа
                 bool isDirected = checkBox1.Checked;
-                graph.AddEdge(from, to);
+                graph.AddEdge(from, to, isDirected);
 
                 string edgeType = isDirected ? "направленное" : "ненаправленное";
                 MessageBox.Show($"Добавлено {edgeType} ребро между {from} и {to}.");
@@ -57,6 +56,38 @@ namespace GraphShortestPath
                 MessageBox.Show("Введите корректные номера вершин.");
             }
         }
+
+        private void btnLoadGraph_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                Filter = "Все поддерживаемые форматы|*.txt;*.xml|Текстовые файлы (*.txt)|*.txt|XML файлы (*.xml)|*.xml",
+                Title = "Загрузить граф"
+            };
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    bool isDirected = checkBox1.Checked;
+
+                    if (openFileDialog.FileName.EndsWith(".txt"))
+                    {
+                        graph = FileManager.LoadGraphFromFile(openFileDialog.FileName, isDirected);
+                    }
+                    else if (openFileDialog.FileName.EndsWith(".xml"))
+                    {
+                        graph = FileManager.LoadGraphFromXmlFile(openFileDialog.FileName, isDirected);
+                    }
+                    MessageBox.Show("Граф успешно загружен!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Ошибка: {ex.Message}");
+                }
+            }
+        }
+
 
 
         private void btnFindPath_Click(object sender, EventArgs e)
@@ -98,7 +129,7 @@ namespace GraphShortestPath
             {
                 try
                 {
-                    var resultPath = BFS.FindShortestPath(graph, int.Parse(txtStart.Text), int.Parse(txtEnd.Text));
+                    List<int> resultPath = BFS.FindShortestPath(graph, int.Parse(txtStart.Text), int.Parse(txtEnd.Text));
                     FileManager.SavePathToFile(saveFileDialog.FileName, resultPath);
                     MessageBox.Show("Результат успешно сохранен!");
                 }
@@ -109,35 +140,8 @@ namespace GraphShortestPath
             }
         }
 
-        private void btnLoadGraph_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog
-            {
-                Filter = "Все поддерживаемые форматы|*.txt;*.xml|Текстовые файлы (*.txt)|*.txt|XML файлы (*.xml)|*.xml",
-                Title = "Загрузить граф"
-            };
 
 
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                try
-                {
-                    if (openFileDialog.FileName.EndsWith(".txt"))
-                    {
-                        graph = FileManager.LoadGraphFromFile(openFileDialog.FileName);
-                    }
-                    else if (openFileDialog.FileName.EndsWith(".xml"))
-                    {
-                        graph = FileManager.LoadGraphFromXmlFile(openFileDialog.FileName, checkBox1.Checked);
-                    }
-                    MessageBox.Show("Граф успешно загружен!");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Ошибка: {ex.Message}");
-                }
-            }
-        }
 
 
 
@@ -209,7 +213,7 @@ namespace GraphShortestPath
             }
         }
 
-        
+    
     }
 }
 
