@@ -45,6 +45,8 @@
             btnLoadGraph = new Button();
             checkBox1 = new CheckBox();
             btnClearGraph = new Button();
+            exitButton = new Button();
+            btnHelp = new Button();
             SuspendLayout();
             // 
             // txtFrom
@@ -122,59 +124,64 @@
             // 
             // txtVert
             // 
-            txtVert.Location = new Point(228, 10);
+            txtVert.Location = new Point(228, 16);
             txtVert.Name = "txtVert";
             txtVert.Size = new Size(150, 31);
             txtVert.TabIndex = 11;
             // 
             // btnAddVertex
             // 
+            btnAddVertex.BackColor = Color.Lavender;
             btnAddVertex.Location = new Point(396, 10);
             btnAddVertex.Name = "btnAddVertex";
             btnAddVertex.Size = new Size(106, 91);
             btnAddVertex.TabIndex = 12;
             btnAddVertex.Text = "Добавить вершину";
-            btnAddVertex.UseVisualStyleBackColor = true;
+            btnAddVertex.UseVisualStyleBackColor = false;
             btnAddVertex.Click += btnAddVertex_Click;
             // 
             // btnAddEdge
             // 
+            btnAddEdge.BackColor = Color.Lavender;
             btnAddEdge.Location = new Point(396, 130);
             btnAddEdge.Name = "btnAddEdge";
-            btnAddEdge.Size = new Size(106, 119);
+            btnAddEdge.Size = new Size(106, 101);
             btnAddEdge.TabIndex = 13;
             btnAddEdge.Text = "Добавить ребро";
-            btnAddEdge.UseVisualStyleBackColor = true;
+            btnAddEdge.UseVisualStyleBackColor = false;
             btnAddEdge.Click += btnAddEdge_Click;
             // 
             // btnFindPath
             // 
+            btnFindPath.BackColor = Color.Green;
             btnFindPath.Location = new Point(396, 314);
             btnFindPath.Name = "btnFindPath";
             btnFindPath.Size = new Size(93, 93);
             btnFindPath.TabIndex = 14;
             btnFindPath.Text = "Поиск пути";
-            btnFindPath.UseVisualStyleBackColor = true;
+            btnFindPath.UseVisualStyleBackColor = false;
             btnFindPath.Click += btnFindPath_Click;
             // 
             // btnSaveResult
             // 
-            btnSaveResult.Location = new Point(596, 22);
+            btnSaveResult.BackColor = Color.Green;
+            btnSaveResult.Location = new Point(508, 314);
             btnSaveResult.Name = "btnSaveResult";
-            btnSaveResult.Size = new Size(129, 66);
+            btnSaveResult.Size = new Size(111, 93);
             btnSaveResult.TabIndex = 15;
             btnSaveResult.Text = "Сохранить результат";
-            btnSaveResult.UseVisualStyleBackColor = true;
+            btnSaveResult.UseVisualStyleBackColor = false;
             btnSaveResult.Click += btnSaveResult_Click;
             // 
             // btnLoadGraph
             // 
-            btnLoadGraph.Location = new Point(731, 24);
+            btnLoadGraph.BackColor = Color.Lavender;
+            btnLoadGraph.Location = new Point(556, 16);
             btnLoadGraph.Name = "btnLoadGraph";
-            btnLoadGraph.Size = new Size(121, 64);
+            btnLoadGraph.Size = new Size(113, 94);
             btnLoadGraph.TabIndex = 16;
             btnLoadGraph.Text = "Загрузить граф";
-            btnLoadGraph.UseVisualStyleBackColor = true;
+            btnLoadGraph.UseVisualStyleBackColor = false;
             btnLoadGraph.Click += btnLoadGraph_Click;
             // 
             // checkBox1
@@ -190,19 +197,43 @@
             // 
             // btnClearGraph
             // 
-            btnClearGraph.Location = new Point(885, 24);
+            btnClearGraph.BackColor = Color.Red;
+            btnClearGraph.Location = new Point(827, 119);
             btnClearGraph.Name = "btnClearGraph";
-            btnClearGraph.Size = new Size(95, 64);
+            btnClearGraph.Size = new Size(151, 77);
             btnClearGraph.TabIndex = 18;
             btnClearGraph.Text = "Удалить данные";
-            btnClearGraph.UseVisualStyleBackColor = true;
+            btnClearGraph.UseVisualStyleBackColor = false;
             btnClearGraph.Click += btnClearGraph_Click;
+            // 
+            // exitButton
+            // 
+            exitButton.Location = new Point(788, 344);
+            exitButton.Name = "exitButton";
+            exitButton.Size = new Size(203, 63);
+            exitButton.TabIndex = 19;
+            exitButton.Text = "Выход из программы";
+            exitButton.UseVisualStyleBackColor = true;
+            exitButton.Click += exitButton_Click;
+            // 
+            // btnHelp
+            // 
+            btnHelp.BackColor = Color.Yellow;
+            btnHelp.Location = new Point(827, 27);
+            btnHelp.Name = "btnHelp";
+            btnHelp.Size = new Size(151, 57);
+            btnHelp.TabIndex = 20;
+            btnHelp.Text = "Помощь";
+            btnHelp.UseVisualStyleBackColor = false;
+            btnHelp.Click += btnHelp_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1381, 634);
+            ClientSize = new Size(1043, 424);
+            Controls.Add(btnHelp);
+            Controls.Add(exitButton);
             Controls.Add(btnClearGraph);
             Controls.Add(checkBox1);
             Controls.Add(btnLoadGraph);
@@ -245,5 +276,7 @@
         private Button btnLoadGraph;
         private CheckBox checkBox1;
         private Button btnClearGraph;
+        private Button exitButton;
+        private Button btnHelp;
     }
 }

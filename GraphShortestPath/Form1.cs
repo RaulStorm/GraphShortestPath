@@ -8,11 +8,16 @@ namespace GraphShortestPath
     public partial class Form1 : Form
     {
         private Graph graph;
+        private HelpManager helpManager;
 
         public Form1()
         {
             InitializeComponent();
+            this.Text = "Поиск минимального пути в графе";
+
             graph = new Graph();
+            helpManager = new HelpManager();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -213,7 +218,23 @@ namespace GraphShortestPath
             }
         }
 
-    
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("Вы уверены, что хотите выйти?",
+                                         "Подтверждение выхода",
+                                         MessageBoxButtons.YesNo,
+                                         MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            helpManager.ShowHelp();
+        }
     }
 }
 
