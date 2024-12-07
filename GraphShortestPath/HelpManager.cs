@@ -7,7 +7,6 @@ public class HelpManager
 
     public HelpManager()
     {
-        // Содержимое справки
         helpContent = "Добро пожаловать в приложение для поиска минимального пути в графе!\n\n" +
                       "Вот список основных функций:\n" +
                       "- Добавление вершин и рёбер вручную.\n" +
@@ -19,9 +18,6 @@ public class HelpManager
                       "Так же пользователь имеет возможность пропустить ручное добавление данных путём загрузки графа из txt или xml-файла.";
     }
 
-    /// <summary>
-    /// Показывает окно с основной справкой.
-    /// </summary>
     public void ShowHelp()
     {
         MessageBox.Show(helpContent, "Справка", MessageBoxButtons.OK, MessageBoxIcon.Information);

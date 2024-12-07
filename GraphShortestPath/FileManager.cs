@@ -5,11 +5,6 @@ using System.Xml.Linq;
 
 public static class FileManager
 {
-    /// <summary>
-    /// Сохраняет результат (путь) в текстовый файл.
-    /// </summary>
-    /// <param name="filePath">Путь к файлу</param>
-    /// <param name="path">Список вершин, составляющих путь</param>
     public static void SavePathToFile(string filePath, List<int> path)
     {
         try
@@ -22,15 +17,6 @@ public static class FileManager
         }
     }
 
-    /// <summary>
-    /// Считывает граф из текстового файла.
-    /// Формат файла:
-    /// Вершины: 1,2,3,4
-    /// Ребра: 1-2,2-3,3-4
-    /// </summary>
-    /// <param name="filePath">Путь к файлу</param>
-    /// <param name="isDirected">Указывает, является ли граф направленным</param>
-    /// <returns>Граф, построенный на основе файла</returns>
     public static Graph LoadGraphFromFile(string filePath, bool isDirected)
     {
         var graph = new Graph(isDirected);
@@ -75,25 +61,6 @@ public static class FileManager
         return graph;
     }
 
-    /// <summary>
-    /// Считывает граф из XML-файла.
-    /// Формат файла:
-    /// <Graph>
-    ///   <Vertices>
-    ///     <Vertex>1</Vertex>
-    ///     <Vertex>2</Vertex>
-    ///   </Vertices>
-    ///   <Edges>
-    ///     <Edge>
-    ///       <From>1</From>
-    ///       <To>2</To>
-    ///     </Edge>
-    ///   </Edges>
-    /// </Graph>
-    /// </summary>
-    /// <param name="filePath">Путь к файлу</param>
-    /// <param name="isDirected">Указывает, является ли граф направленным</param>
-    /// <returns>Граф, построенный на основе XML-файла</returns>
     public static Graph LoadGraphFromXmlFile(string filePath, bool isDirected)
     {
         var graph = new Graph(isDirected);
@@ -102,7 +69,6 @@ public static class FileManager
         {
             var xDocument = XDocument.Load(filePath);
 
-            // Читаем вершины
             var vertexElements = xDocument.Descendants("Vertex");
             foreach (var vertexElement in vertexElements)
             {
@@ -112,7 +78,6 @@ public static class FileManager
                 }
             }
 
-            // Читаем рёбра
             var edgeElements = xDocument.Descendants("Edge");
             foreach (var edgeElement in edgeElements)
             {

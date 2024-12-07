@@ -26,7 +26,6 @@
 
         adjacencyList[from].Add(to);
 
-        // Если граф ненаправленный, добавляем обратное ребро.
         if (!isDirected)
         {
             adjacencyList[to].Add(from);
