@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GraphShortestPath")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc52cab41504f051a85e2fa04f41d84fc3af12e5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a9f9ddbf3c5ff4b6176cbf39918b59de6ce7fb6")]
 [assembly: System.Reflection.AssemblyProductAttribute("GraphShortestPath")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GraphShortestPath")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

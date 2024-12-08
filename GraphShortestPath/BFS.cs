@@ -4,7 +4,7 @@ public static class BFS
 {
     public static List<int> FindShortestPath(Graph graph, int start, int end)
     {
-        if (start == end)
+        if (!graph.GetNeighbors(start).Contains(end) && start == end)
         {
             return new List<int> { start };
         }

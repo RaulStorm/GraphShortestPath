@@ -17,7 +17,6 @@ namespace GraphShortestPath
 
             graph = new Graph();
             helpManager = new HelpManager();
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -34,22 +33,13 @@ namespace GraphShortestPath
             {
                 if (int.TryParse(vertex.Trim(), out int v))
                 {
-                    if (!graph.ContainsVertex(v))
-                    {
-                        graph.AddVertex(v);
-                    }
-                    else
-                    {
-                        MessageBox.Show($"Вершина {v} уже существует в графе.");
-                    }
+                    graph.AddVertex(v);
                 }
             }
 
             MessageBox.Show("Вершины добавлены.");
             txtVert.Clear();
         }
-
-
 
         private void btnAddEdge_Click(object sender, EventArgs e)
         {
@@ -69,7 +59,6 @@ namespace GraphShortestPath
                 MessageBox.Show("Введите корректные номера вершин.");
             }
         }
-
 
         private void btnLoadGraph_Click(object sender, EventArgs e)
         {
@@ -93,15 +82,7 @@ namespace GraphShortestPath
                     {
                         graph = FileManager.LoadGraphFromXmlFile(openFileDialog.FileName, isDirected);
                     }
-
-                    if (graph.GetNeighbors(0).Count == 0)
-                    {
-                        MessageBox.Show("Граф пустой или некорректный.");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Граф успешно загружен!");
-                    }
+                    MessageBox.Show("Граф успешно загружен!");
                 }
                 catch (Exception ex)
                 {
@@ -110,18 +91,9 @@ namespace GraphShortestPath
             }
         }
 
-
-
-        private void btnFindPath_Click(object sender, EventArgs e)
-        {
+        private void btnFindPath_Click(object sender, EventArgs e) {
             if (int.TryParse(txtStart.Text, out int start) && int.TryParse(txtEnd.Text, out int end))
             {
-                if (start == end)
-                {
-                    MessageBox.Show("Начальная и конечная вершины совпадают. Путь — это сама вершина.");
-                    return;
-                }
-
                 try
                 {
                     List<int> path = BFS.FindShortestPath(graph, start, end);
@@ -149,7 +121,7 @@ namespace GraphShortestPath
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog
             {
-                Filter = "Text Files (*.txt)|*.txt",
+                Filter = "Текстовые файлы (*.txt)|*.txt",
                 Title = "Сохранить результат"
             };
 
@@ -168,11 +140,6 @@ namespace GraphShortestPath
             }
         }
 
-
-
-
-
-
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox1.Checked)
@@ -181,13 +148,12 @@ namespace GraphShortestPath
             }
             else
             {
-                MessageBox.Show("Ребро не направленый");
+                MessageBox.Show("Ребро ненаправленное");
             }
         }
 
         private void btnClearGraph_Click(object sender, EventArgs e)
         {
-            // Получаем состояние чекбокса
             bool isDirected = checkBox1.Checked;
 
             var dialogResult = MessageBox.Show(
@@ -260,4 +226,3 @@ namespace GraphShortestPath
         }
     }
 }
-

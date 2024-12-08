@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-public class Graph
+﻿public class Graph
 {
     private readonly bool isDirected;
     private readonly Dictionary<int, HashSet<int>> adjacencyList;
@@ -11,11 +7,6 @@ public class Graph
     {
         this.isDirected = isDirected;
         adjacencyList = new Dictionary<int, HashSet<int>>();
-    }
-
-    public bool ContainsVertex(int vertex)
-    {
-        return adjacencyList.ContainsKey(vertex);
     }
 
     public void AddVertex(int vertex)
@@ -33,12 +24,6 @@ public class Graph
             throw new ArgumentException("Одна или обе вершины не существуют.");
         }
 
-        if (adjacencyList[from].Contains(to))
-        {
-            MessageBox.Show($"Ребро между {from} и {to} уже существует.");
-            return;
-        }
-
         adjacencyList[from].Add(to);
 
         if (!isDirected)
@@ -46,6 +31,8 @@ public class Graph
             adjacencyList[to].Add(from);
         }
     }
+
+
 
     public void ClearEdges()
     {
@@ -61,7 +48,6 @@ public class Graph
         {
             adjacencyList[from].Remove(to);
         }
-
         if (!isDirected && adjacencyList.ContainsKey(to))
         {
             adjacencyList[to].Remove(from);
@@ -74,12 +60,6 @@ public class Graph
         foreach (var neighbors in adjacencyList.Values)
         {
             neighbors.Remove(vertex);
-        }
-
-        // Удаляем все рёбра, которые ссылаются на удалённую вершину
-        foreach (var vertexKey in adjacencyList.Keys.ToList())
-        {
-            adjacencyList[vertexKey].RemoveWhere(v => v == vertex);
         }
     }
 
