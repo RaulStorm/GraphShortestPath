@@ -34,13 +34,21 @@ namespace GraphShortestPath
             {
                 if (int.TryParse(vertex.Trim(), out int v))
                 {
-                    graph.AddVertex(v);
+                    if (!graph.ContainsVertex(v))
+                    {
+                        graph.AddVertex(v);
+                    }
+                    else
+                    {
+                        MessageBox.Show($"Вершина {v} уже существует в графе.");
+                    }
                 }
             }
 
             MessageBox.Show("Вершины добавлены.");
             txtVert.Clear();
         }
+
 
 
         private void btnAddEdge_Click(object sender, EventArgs e)
@@ -61,6 +69,7 @@ namespace GraphShortestPath
                 MessageBox.Show("Введите корректные номера вершин.");
             }
         }
+
 
         private void btnLoadGraph_Click(object sender, EventArgs e)
         {
@@ -84,7 +93,15 @@ namespace GraphShortestPath
                     {
                         graph = FileManager.LoadGraphFromXmlFile(openFileDialog.FileName, isDirected);
                     }
-                    MessageBox.Show("Граф успешно загружен!");
+
+                    if (graph.GetNeighbors(0).Count == 0)
+                    {
+                        MessageBox.Show("Граф пустой или некорректный.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Граф успешно загружен!");
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -99,6 +116,12 @@ namespace GraphShortestPath
         {
             if (int.TryParse(txtStart.Text, out int start) && int.TryParse(txtEnd.Text, out int end))
             {
+                if (start == end)
+                {
+                    MessageBox.Show("Начальная и конечная вершины совпадают. Путь — это сама вершина.");
+                    return;
+                }
+
                 try
                 {
                     List<int> path = BFS.FindShortestPath(graph, start, end);

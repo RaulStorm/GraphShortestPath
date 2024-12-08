@@ -13,7 +13,7 @@ public static class FileManager
         }
         catch (Exception ex)
         {
-            throw new IOException($"Ошибка записи в файл: {ex.Message}");
+            MessageBox.Show($"Ошибка записи в файл: {ex.Message}");
         }
     }
 
@@ -55,7 +55,7 @@ public static class FileManager
         }
         catch (Exception ex)
         {
-            throw new IOException($"Ошибка чтения файла: {ex.Message}");
+            MessageBox.Show($"Ошибка чтения файла: {ex.Message}");
         }
 
         return graph;
@@ -94,7 +94,7 @@ public static class FileManager
         }
         catch (Exception ex)
         {
-            throw new IOException($"Ошибка чтения XML-файла: {ex.Message}");
+            MessageBox.Show($"Ошибка чтения XML-файла: {ex.Message}");
         }
 
         return graph;
